@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="notas.css">
+    <title>DO RE MI KIDS</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo kids.png">
+                </a>
+            </div>
+            <div class="menu-icon" id="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#contact">Contactos</a></li>
+                <li><a href="#inicio">Inicia Sesión</a></li>
+                <li><a href="#inicio"></a></li>
+                <li class="figuritas"><a href="sesion.html"><img src="figuritas.png" alt=""></a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <div class="instru">
+        <h2>MELODÍA ENCANTADA</h2>
+        <h3>Instrucciones</h3>
+        <p>Haz clic en el botón "Comenzar" para iniciar el juego.  Aparecerá una nota musical resaltada en el tablero de juego. Debes identificar la nota rápidamente y hacer clic en la casilla correspondiente o presionar la tecla del teclado asociada a esa nota.
+            Si aciertas la nota, tu puntuación aumentará. Después de cada acierto, se mostrará una nueva nota aleatoria. El juego continuará mostrando notas de forma automática cada 3 segundos.
+            Tu objetivo es acertar 5 notas correctamente para ganar y recibir un mensaje de felicitaciones.
+            Una vez que hayas acertado 5 notas, el juego se detendrá hasta que presiones el botón "Comenzar" de nuevo.
+        </p>
+        
+        <div class="span">
+            <span>Nota Do = C</span>
+            <span>Nota Re = D</span>
+            <span>Nota Mi = E</span>
+            <span>Nota Fa = F</span>
+            <span>Nota Sol = G</span>
+            <span>Nota La = A</span>
+            <span>Nota Si = B</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="game-board">
+            <div class="note-container">
+                <div class="note">DO</div>
+            </div>
+            <div class="note-container">
+                <div class="note">RE</div>
+            </div>
+            <div class="note-container">
+                <div class="note">MI</div>
+            </div>
+            <div class="note-container">
+                <div class="note">FA</div>
+            </div>
+            <div class="note-container">
+                <div class="note">SOL</div>
+            </div>
+            <div class="note-container">
+                <div class="note">LA</div>
+            </div>
+            <div class="note-container">
+                <div class="note">SI</div>
+            </div>
+        </div>
+        <button id="start-btn">Comenzar</button>
+        <div id="score-container" class="score">
+            <span>Puntuación: </span>
+            <span id="score"> 0</span>
+            <div id="message"></div>
+        </div>
+    </div>
+
+    <div class="obje">
+        <h3>Objetivo</h3>
+        <p>Este juego está diseñado para que los niños aprendan y practiquen el cifrado de las notas musicales de una manera divertida y motivadora! Ayúdalos a desarrollar sus habilidades musicales desde una edad temprana.</p>
+    </div>
+
+    <script src="sopa.js"></script>
+    
+</body>
+</html>

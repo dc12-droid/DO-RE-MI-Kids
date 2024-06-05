@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: black;
+    color: #fff;
+    padding: 10px 0;
+    font-family: Monserrat;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    height: 80px;
+}
+
+.logo a img{
+    width: 85%;
+    height: 70px;
+    padding-top: 1px;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-top: 3%;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Monserrat;
+    
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+.figuritas img{
+    width: 100px;
+    margin-bottom: 5%;
+}
+
+
+#game-board {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.note-container {
+    width: 80px;
+    height: 100px;
+    background-color: #e7427e ;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-family: Monserrat;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+.note-container.active {
+    background-color:  #fec110;
+}
+
+#start-btn {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #b49999;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#score-container {
+    font-size: 18px;
+    font-family: Monserrat;
+}
+
+
+.instru h2{
+    font-size: 40px;
+    padding-top: 2%;
+    font-family: Monserrat;
+}
+
+.instru{
+    padding: 2%;
+    
+}
+
+.instru h3{
+    font-size: 25px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-family: Monserrat;
+    color: #e7427e ;
+}
+
+.instru p{
+    font-family: Monserrat;
+    text-align: justify;
+}
+
+
+.teclado{
+    background-color: pink;
+    padding: 1%;
+}
+
+.span{
+    font-size: 15px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display: flex;
+    flex-direction: column;
+    font-family: Monserrat;
+}
+
+@font-face {
+    font-family: Monserrat;
+    src: url(Montserrat-Regular.ttf);
+}
+
+.score{
+    display: flex;
+    justify-content: center;
+    height: 30px;
+}
+
+.score span{
+    padding-top: 0.5%;
+}
+
+.obje{
+    background-color: aqua;
+    padding: 2%;
+    margin: 2%;
+    background-color: #b4c14b;
+}
+
+.obje h3{
+    font-family: Monserrat;
+    padding-bottom: 0.5%;
+
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+    
+}

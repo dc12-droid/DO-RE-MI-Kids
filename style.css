@@ -1,0 +1,904 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Monserrat;
+}
+
+header {
+    background: black;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    font-family: Monserrat;
+    margin: auto;
+    padding: 0 20px;
+    height: 80px;
+}
+
+.logo a img{
+    width: 85%;
+    height: 70px;
+    padding-top: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-top: 3%;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+.figuritas img{
+    width: 100px;
+    margin-bottom: 5%;
+}
+
+
+
+.centro{
+    display: flex;
+    width: 100%;
+    height: 600px;
+    justify-content: center;
+    background-image: url('inicio.png'); /* Cambia 'ruta/a/tu/imagen.jpg' por la ruta de tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo el div */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+.centro img{
+    height: 20px;
+}
+
+.centro h2{
+    justify-content: center;
+    font-size: 90px;
+    padding: 10px;
+    padding-top: 30%;
+    font-weight: bold;
+}
+
+.centro a{
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    padding-bottom: 5%;
+}
+
+.centro button{
+    background-color: #245e4f;
+    padding-top: 0.5%;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 10%;
+    border-color: transparent;
+}
+
+.centro a{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 5%;
+    border-color: transparent;
+    width: 200px;
+}
+
+.notas{
+    display: flex;
+}
+
+.notas span{
+    color: white;
+    text-align: center;
+}
+
+.DO{
+    background-color: #d5010d;
+    width: 15%;
+}
+
+.RE{
+    background-color: rgb(255, 153, 0);
+    width: 15%;
+}
+
+.MI{
+    background-color: rgb(255, 251, 0);
+    width: 15%; 
+}
+
+.FA{
+    background-color: #b4c14b;
+    width: 15%;
+}
+
+.SOL{
+    background-color: #245e4f;
+    width: 15%; 
+}
+
+.LA{
+    background-color: #58c5bf;
+    width: 15%;
+}
+
+.SI{
+    background-color: #e7427e ;
+    width: 15%;
+}
+
+.Do{
+    background-color: #58c5bf
+    ;
+    width: 15%;
+}
+
+
+.nosotros{
+    display: flex;
+    margin-top: 2%;
+    margin-bottom:3%;
+    width: 100%;
+    padding-top: 2%;
+}
+
+
+.izquierda{
+    width: 60%;
+    margin-left: 2%;
+    padding: 3%;
+}
+
+.nosotros p{
+    text-align: justify;
+    font-size: 20px;
+    font-family: Monserrat;
+}
+
+.nosotros h2{
+    color: rgb(0, 0, 0);
+    font-size: 60px;
+    text-align: center;
+    padding-bottom: 5%;
+    font-family: Monserrat;
+}
+
+.nosotros h3{
+    background-color: #fec110;
+    border-radius: 50px;
+    text-align: center;
+    width: 50%;
+    font-size: 40px;
+    margin-left: 40%;
+    padding: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 5%;
+}
+
+.puntos img{
+    width: 20%;
+    height: 10%;
+    margin-left: 5%;
+    margin-bottom: 3%;
+}
+
+.derecha{
+    width: 50%;
+}
+
+.derecha img{
+    width: 70%;
+    height: 100%;
+    margin-left: 5%;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-family: Monserrat;
+}
+
+#game-board {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.note-container {
+    width: 80px;
+    height: 100px;
+    background-color: #b49999;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+.note-container.active {
+    background-color: #8c7777;
+}
+
+#start-btn {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #b49999;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: Monserrat;
+   
+}
+
+#score-container {
+    font-size: 18px;
+    font-family: Monserrat;
+}
+
+@font-face {
+    font-family: Monserrat;
+    src: url(Montserrat-Regular.ttf);
+}
+
+.frase{
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center; 
+}
+
+.frase img{
+    height: 90%;
+}
+
+
+.fotos{
+    height: 5%;
+    margin-top: 3%;
+}
+
+.fotos img{
+    width: 50%;
+    margin-left: 25%;
+}
+
+.carousel {
+    position: relative;
+    max-width: 80%;
+    margin: auto;
+    overflow: hidden;
+    border:  #ccc;   
+    margin-bottom: 5%; 
+    width: 50%;
+    height: 400px;
+}
+
+.carousel-images {
+    display: flex;
+    width: 100%;
+}
+
+.slide{
+    display: none;
+    width: 100%;
+    
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    background-color: rgba(100, 179, 231, 0.5);
+    border-radius: 3px;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(134, 203, 235, 0.8);
+}
+
+.slide3{
+    display: flex;
+
+}
+.titulo{
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.juegos{
+    width: 100%;
+    padding: 2%;
+    margin-top: 0;
+    height: 200px;
+    display: flex;
+}
+
+.juegos a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+.juegos img{
+    width: 100%;
+    margin-left: 10px;
+}
+
+.juego1{
+    width: 20%;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.juegos img:hover{
+    width: 110%;
+}
+.juego2{
+    width: 20%;
+    margin-right: 15%;
+}
+
+.juego3{
+    width: 20%;
+    margin-right: 15%;
+}
+
+.nombres{
+    display: flex;
+    font-weight: bold;
+    margin-top: 1%;
+}
+
+.uno{
+    margin-left: 16%;
+    margin-right: 12%;
+    padding: 2%;
+}
+
+.dos{
+    margin-right:14%;
+    padding: 2%;
+}
+
+.tres{
+    padding: 2%;
+}
+
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.notas2{
+    display: flex;
+    
+}
+
+.notas2 span{
+    color: white;
+    text-align: center;
+}
+
+.DOO{
+    background-color: #d5010d;
+    width: 15%;
+}
+
+.REE{
+    background-color: #ff4d03;
+    width: 15%;
+}
+
+.MII{
+    background-color: #ebb822;
+    width: 15%;
+
+}
+
+.FAA{
+    background-color: #b4c14b;
+    width: 15%;
+
+}
+
+.SOOL{
+    background-color:#245e4f;
+    width: 15%;
+
+}
+
+.LAA{
+    background-color: #58c5bf;
+    width: 15%;
+
+}
+
+.SII{
+    background-color:#e7427e;
+    width: 15%;
+}
+
+.Doo{
+    background-color: #58c5bf;
+    width: 15%;;
+    width: 15%;
+}
+
+.subs{
+    display: flex;
+
+}
+
+.dibujo{
+    width: 40%;
+}
+
+.dibujo img{
+    width: 80%;
+    margin-left: 20%;
+    margin-top: 5%;
+    
+}
+
+.contenido{
+    width: 50%;
+    margin-left: 50px;
+}
+
+.contenido img{
+    width: 100%;
+    padding: 7%;
+    margin-top: 13%;
+}
+
+
+.linea{
+    background-color: #58c5bf;
+    width: 100%;
+    height: 25px;
+}
+
+.contac{
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.imagen{
+    width: 40%;
+    margin-top: 3%;
+    margin-left: 13%;
+}
+
+.imagen img{
+    width: 85%;
+    height: 450px;
+}
+
+.datos{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    margin-right: 50px;
+}
+
+.datos img{
+    width: 8%;
+    height: 100%;
+    margin-right: 2%;
+}
+
+.datos h3{
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.datos a{
+    text-decoration: none;
+    padding-top: 2%;
+    color: black;
+}
+
+.face{
+    margin-left: 20%;
+    display: flex;
+    margin-top: 20px;
+    width: 60%;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #fec110 ;
+}
+
+.insta{
+    margin-left: 20%;
+    display: flex;
+    margin-top: 20px;
+    background-color: #b49999;
+    width: 60%;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #e7427e;
+}
+
+.gmail{
+    margin-left: 20%;
+    display: flex;
+    margin-top: 20px;
+    background-color: #b49999;
+    width: 60%;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #58c5bf;
+}
+
+.num{
+    margin-left: 20%;
+    display: flex;
+    margin-top: 20px;
+    background-color: #b49999;
+    width: 60%;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #b4c14b;
+}
+
+.notas3{
+    display: flex;
+    
+}
+
+.notas3 span{
+    color: white;
+    text-align: center;
+}
+
+.DO4{
+    background-color: #d5010d;
+    width: 15%;
+}
+
+.RE4{
+    background-color: #ff4d03;
+    width: 15%;
+}
+
+.MI4{
+    background-color: #ebb822;
+    width: 15%;
+
+}
+
+.FA4{
+    background-color: #b4c14b;
+    width: 15%;
+
+}
+
+.SOL4{
+    background-color:#245e4f;
+    width: 15%;
+
+}
+
+.LA4{
+    background-color: #58c5bf;
+    width: 15%;
+
+}
+
+.SI4{
+    background-color:#e7427e;
+    width: 15%;
+}
+
+.Do4{
+    background-color: #58c5bf;
+    width: 15%;;
+    width: 15%;
+}
+
+.videos{
+    margin-top: 5%;
+}
+
+.videos h2{
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 2%;
+}
+
+.videos img{
+    width: 20%;
+    margin-right: 10%;
+    padding-bottom: 2%;
+}
+
+.castor{
+    margin-left: 9%;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    margin-left: 10%;
+}
+
+.botones img{
+    margin-right: 10%;
+    width: 100%;
+    height: 50%;
+}
+
+.btn1{
+    width: 20%;
+    justify-content: center;
+    display: flex;
+}
+.btn2{
+    width: 48%;
+    justify-content: center;
+    display: flex;
+}
+.btn3{
+    width: 20%;
+    justify-content: center;
+    display: flex;
+}
+
+footer {
+    background: black;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.datos div:hover{
+    width: 50%;
+    transition: 0.2s;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    font-family: Monserrat;
+    margin: auto;
+    padding: 0 20px;
+    height: 80px;
+}
+
+.logo img{
+    width: 85%;
+    height: 75px;
+    padding-top: 9px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-top: 3%;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+
+.figuritas img{
+    width: 100px;
+    margin-bottom: 5%;
+}
+
+
+
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+
+    .centro h2{
+        font-size: 50px;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .izquierda{
+        width: 95%;
+        margin-right: 5%;
+        margin-top: 5%;
+    }
+
+    .nosotros{
+        margin: 0;
+    }
+
+    .nosotros{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nosotros img{
+        margin-left: 70%;
+    }
+    .frase{
+        height: 50%;
+    }
+
+    .frase img{
+        width: 30%;
+        height: 50%;
+        margin-bottom: 0;
+    }
+
+    .titulo h2{
+        font-size: 45px;
+        margin-top: 2%;
+        padding-top: 0;
+    }
+
+    .juegos{
+        margin-right: 5px;
+        margin-top: 15px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        height: 50%;
+    }
+
+    .nombres{
+        margin-right: 40px;
+        margin-top: 0;
+    }
+
+    .nombres span{
+        margin-right: 40px;
+        margin-bottom: 15px; 
+    }
+
+    .carousel{
+        width: 100%;
+        height: 100%;
+    }
+
+    .videos h2{
+        font-size: 40px;
+    }
+
+    .videos img{
+        width: 14%;
+        margin-left: 57px;
+    }
+
+    .imagen{
+        width: 50%;
+        margin-left: 5%;
+    }
+
+    .imagen img{
+        height: 70%;
+        margin-top: 40%;
+    }
+
+    .datos{
+        width: 70%;
+    }
+
+    .datos h3{
+        font-size: 40px;
+    }
+
+    .datos img{
+        width: 30%;
+    }
+
+    .datos a{
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+    }
+} 
+
+
+ 

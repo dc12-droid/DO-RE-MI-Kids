@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Monserrat;
+}
+
+header {
+    background: black;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    font-family: Monserrat;
+    margin: auto;
+    padding: 0 20px;
+    height: 80px;
+}
+
+.logo a img{
+    width: 85%;
+    height: 70px;
+    padding-top: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-top: 3%;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+.figuritas img{
+    width: 100px;
+    margin-bottom: 5%;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+}
+
+.controls {
+    margin-top: 2%;
+}
+
+.timer {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+    justify-content: center;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.card.flipped img {
+    display: block;
+}
+
+.card.flipped .back {
+    display: none;
+}
+
+.back {
+    width: 100%;
+    height: 100%;
+    background-color:  #58c5bf
+}
+
+.info{
+    padding: 2%;
+}
+
+.info h2{
+    font-size: 40px;
+    padding-top: 2%;
+    font-family: Monserrat;
+    color: #b4c14b;
+}
+
+.info h3{
+    font-size: 25px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-family: Monserrat;
+}
+
+.info p{
+    font-family: Monserrat;
+    text-align: justify;
+}
+
+button{
+    font-family: Monserrat;
+    font-size: 10px;
+    padding: 10px;
+    color: black;
+    background-color: #e7427e ;
+    border-radius: 10px;
+    font-weight: bold;
+    border-color: #e7427e ;
+}
+
+.game-board{
+    padding-bottom: 5%;
+}
+
+.obje{
+    background-color: #e7427e ;
+    padding: 2%;
+    margin: 2%;
+}
+
+.obje h3{
+    font-family: Monserrat;
+    padding-bottom: 0.5%;
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .centro h2{
+        font-size: 50px;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+    .game-board {
+        grid-template-columns: repeat(2, 80px);
+        gap: 5px;
+    }
+    
+    .card {
+        width: 80px;
+        height: 80px;
+    }
+    
+    
+}
+
+
+@font-face {
+    font-family: Monserrat;
+    src: url(Montserrat-Regular.ttf);
+}

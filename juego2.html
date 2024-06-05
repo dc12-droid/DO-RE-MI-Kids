@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="juego2.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo kids.png">
+                </a>
+            </div>
+            <div class="menu-icon" id="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#contact">Contactos</a></li>
+                <li><a href="#inicio">Inicia Sesión</a></li>
+                <li><a href="#inicio"></a></li>
+                <li class="figuritas"><a href="sesion.html"><img src="figuritas.png" alt=""></a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <div class="info">
+        <h2>MUSIC MEMO</h2>
+        <h3>Instrucciones</h3>
+        <p>Encuentra todas las parejas de imágenes coincidentes en 60 segundos. Haz clic en "Comenzar" para iniciar el juego y el cronómetro, luego voltea las cartas para revelar las imágenes. Si las imágenes de dos cartas coinciden, permanecerán volteadas; si no, se voltearán de nuevo. Continúa hasta encontrar todas las parejas antes de que el tiempo se agote. Puedes reiniciar el juego en cualquier momento haciendo clic en "Reiniciar", lo que restablecerá el cronómetro y volverá a mezclar las cartas.</p>
+    </div>
+
+    <div class="container">
+        <div class="controls">
+            <button id="playSound">Comenzar</button>
+            <button id="restart">Reiniciar</button>
+            <div class="timer" id="timer">60</div>
+        </div>
+        <div class="game-board" id="gameBoard"></div>
+    </div>
+
+    <div class="obje">
+        <h3>Objetivo</h3>
+        <p>El objetivo es brindar una herramienta educativa divertida y efectiva para enseñar y reforzar el reconocimiento y la identificación de diversos instrumentos musicales. A través de la memorización y el emparejamiento de tarjetas con imágenes de instrumentos, los jugadores pueden mejorar su capacidad para reconocer visualmente diferentes instrumentos, así como también desarrollar su memoria y atención. </p>
+    </div>
+
+    <script src="juego2.js"></script>
+</body>
+</html>
